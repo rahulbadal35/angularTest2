@@ -1,0 +1,30 @@
+<section id="home" class="video-hero" style="height: 500px; background-image: url(./assets/images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+  <div class="overlay"></div>
+    <div class="display-t display-t2 text-center">
+      <div class="display-tc display-tc2">
+        <div class="container">
+          <div class="col-md-12 col-md-offset-0">
+            <div class="animate-box">
+              <h2>Blog</h2>
+              <p class="breadcrumbs"><span><a href="index.html">Home</a></span> <span>Blog</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <div class="colorlib-blog">
+    <div class="container" >
+      
+    <div class="row" > 
+        <div class="col-md-4 animate-box"  *ngFor= "let mydata of data">
+          <article>
+              <h1><p><b>{{mydata.head}}</b></p></h1>
+              <h4><p><b>{{mydata.date}}</b></p></h4>
+              <h3><p><b>{{mydata.p}}</b></p></h3>
+          </article>
+      </div>
+    </div>
+    </div>
+  </div> 
